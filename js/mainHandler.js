@@ -36,9 +36,19 @@ setInterval(() =>{
     
     const barsButton = document.querySelector("#check");
 
+    if(document.body.offsetWidth >= 1206){
+        document.querySelector(".middle-text").style.display = "block";
+
+        document.querySelector(".button").style.fontSize = "25px";
+        document.querySelector(".button").style.padding = "12px 40px";
+        document.querySelector(".middle-text").style.paddingTop = "200px";
+        document.querySelector(".text").style.fontSize = "24px";
+
+    }
+
     if(document.body.offsetWidth <= 858){
 
-        console.log("<858")
+    
 
         document.querySelector(".button").style.fontSize = "40%";
         document.querySelector(".middle-text").style.paddingTop = "100px";
@@ -48,7 +58,7 @@ setInterval(() =>{
 
     if(document.body.offsetWidth <= 612){
 
-        console.log("<612")
+        
 
         document.querySelector(".button").style.fontSize = "20%";
         document.querySelector(".button").style.padding = "8px 30px";
@@ -62,7 +72,7 @@ setInterval(() =>{
         document.querySelector(".button").style.padding = "12px 40px";
         document.querySelector(".middle-text").style.paddingTop = "200px";
         document.querySelector(".text").style.fontSize = "24px";
-        console.log(">858")
+    
     }
 
     if(document.body.offsetWidth < 350){
