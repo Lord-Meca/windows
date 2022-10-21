@@ -36,14 +36,24 @@ setInterval(() =>{
     
     const barsButton = document.querySelector("#check");
 
-    if(document.body.offsetWidth >= 1206){
-        document.querySelector(".middle-text").style.display = "block";
+    if(document.body.offsetWidth >= 1207){
 
-        document.querySelector(".button").style.fontSize = "25px";
-        document.querySelector(".button").style.padding = "12px 40px";
-        document.querySelector(".middle-text").style.paddingTop = "200px";
-        document.querySelector(".text").style.fontSize = "24px";
+        barsButton.checked = false;
+        document.getElementById("icon").className = "fa fa-bars";
 
+      
+
+    }
+
+    if(!barsButton.checked){
+        if(document.body.offsetWidth >= 1207){
+            document.querySelector(".middle-text").style.display = "block";
+
+            document.querySelector(".button").style.fontSize = "25px";
+            document.querySelector(".button").style.padding = "12px 40px";
+            document.querySelector(".middle-text").style.paddingTop = "200px";
+            document.querySelector(".text").style.fontSize = "24px";
+        }
     }
 
     if(document.body.offsetWidth <= 858){
