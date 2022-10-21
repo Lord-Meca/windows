@@ -53,6 +53,8 @@ setInterval(() =>{
             document.querySelector(".button").style.padding = "12px 40px";
             document.querySelector(".middle-text").style.paddingTop = "200px";
             document.querySelector(".text").style.fontSize = "24px";
+
+            document.querySelector(".footer").style.display = "grid";
         }
     }
 
