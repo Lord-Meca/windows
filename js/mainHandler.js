@@ -72,14 +72,18 @@ setInterval(() =>{
 
     if(document.body.offsetWidth <= 612){
 
-        
+        if(document.body.offsetHeight <= 619){
+            document.querySelector(".button").style.fontSize = "20%";
+            document.querySelector(".button").style.padding = "8px 30px";
+            document.querySelector(".button").style.marginTop = "-3%";
+            document.querySelector(".middle-text").style.paddingTop = "60px";
+            document.querySelector(".text").style.fontSize = "7px";
+        } else {
+            document.querySelector(".text").style.fontSize = "15px";
+            document.querySelector(".button").style.fontSize = "70%";
+        }
 
-        document.querySelector(".button").style.fontSize = "20%";
-        document.querySelector(".button").style.padding = "8px 30px";
-        document.querySelector(".button").style.marginTop = "-3%";
-        document.querySelector(".middle-text").style.paddingTop = "60px";
-        document.querySelector(".text").style.fontSize = "7px";
-
+      
     }
 
     if(document.body.offsetHeight > 975){
