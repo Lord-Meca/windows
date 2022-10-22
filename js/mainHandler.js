@@ -55,16 +55,18 @@ setInterval(() =>{
             document.querySelector(".text").style.fontSize = "24px";
 
             document.querySelector(".footer").style.display = "grid";
+            document.querySelector(".button").style.marginTop = "0";
         }
     }
 
-    if(document.body.offsetWidth <= 858){
+    if(document.body.offsetWidth <= 975){
 
     
 
         document.querySelector(".button").style.fontSize = "40%";
         document.querySelector(".middle-text").style.paddingTop = "100px";
         document.querySelector(".text").style.fontSize = "12px";
+        document.querySelector(".button").style.marginTop = "0";
 
     } 
 
@@ -74,12 +76,13 @@ setInterval(() =>{
 
         document.querySelector(".button").style.fontSize = "20%";
         document.querySelector(".button").style.padding = "8px 30px";
+        document.querySelector(".button").style.marginTop = "-3%";
         document.querySelector(".middle-text").style.paddingTop = "60px";
         document.querySelector(".text").style.fontSize = "7px";
 
     }
 
-    if(document.body.offsetHeight > 858){
+    if(document.body.offsetHeight > 975){
         document.querySelector(".button").style.fontSize = "25px";
         document.querySelector(".button").style.padding = "12px 40px";
         document.querySelector(".middle-text").style.paddingTop = "200px";
