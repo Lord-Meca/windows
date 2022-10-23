@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 :root {
-    --background-navbar: linear-gradient(to right, #321fdd, #321fdd, #321fdd, #321fdd, #3311ae);
+    --background-navbar: /*linear-gradient(to right, #2c0a61, #330e6d, #4b167e, #601c73, #4e1daa);linear-gradient(to right, #321fdd, #321fdd, #321fdd, #321fdd, #3311ae);*/
 }
 
 * {
@@ -137,9 +137,9 @@ a.active::before {
 }
 
 section {
-    background: url(wallpaper_windows_x_macos.png) no-repeat;
+    background: url(wallpapersden.com_macos-12-monterey-stock-dark_2560x1080.jpg) no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 0px);
 }
 
 @media (max-width: 1206px){
@@ -150,10 +150,16 @@ section {
         font-size: 20px;
     }
 
+        
+    
+
+    
     
 
 
 }
+
+
 
 
 @media (max-width: 858px){
@@ -197,9 +203,12 @@ section {
     }
 
     .middle-text p {
-        font-size: 12px;
+        font-size: 25px;
 
     }
+
+    
+
 
 
 
@@ -213,7 +222,10 @@ section {
 
 
 footer {
-    background-image: linear-gradient(to right, #0c021d, #0c021d, #0c021d, #0c021d, #120432, #15033d);
+
+    
+
+    background-image: linear-gradient(to right, #0f052a, #0f052a, #0f052a, #0f052a, #0f052a, #190646, #190646, #190646);
 
 
     
@@ -284,12 +296,41 @@ footer .contact {
     font-size: 25px;
 
     font-style: normal;
+
+    margin-top: -2%;
   
 }
 
 .button:hover {
     transition: .3s ease-in-out;
     box-shadow: 8px 8px #d6679b;
+}
+
+.windows-logo {
+
+    text-align: right;
+    justify-content: right;
+    margin-top: -19%;
+    margin-left: 70%;
+
+    animation: windowsLogoAnim 5s infinite;
+
+}
+
+@keyframes windowsLogoAnim {
+
+    0%{
+        margin-top: -15%;
+    }
+
+    50%{
+        margin-top: -20%;
+    }
+
+    100%{
+        margin-top: -15%;
+    }
+    
 }
 
 
